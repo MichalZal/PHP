@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 02 - Obiliczanie średniej arytmetycznej</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Michał Zalewski">
+</head>
+<body>
+<header>
+    <h1>Zadanie 02</h1>
+    <h2>Autor: Michał Zalewski</h2>
+    <p>Napisz program, który dla czterech liczb rzeczywistych oblicza i wyświetla ich średnią arytmetyczną. WYnik
+        wyświetl w dwóch postaciach. Bez zaokrąglenia oraz z zaokrągleniem do trzech miejsc po przecinku.</p>
+
+</header>
+<main>
+    <form action="wynik.php" method="post">
+        <div>
+            <label for="liczbaA">Podaj pierwszą liczbę: </label>
+            <input type="number" id="liczbaA" name="liczbaA">
+        </div>
+        <div>
+            <label for="liczbaB">Podaj drugą liczbę: </label>
+            <input type="number" id="liczbaB" name="liczbaB">
+        </div>
+        <div>
+            <label for="liczbaC">Podaj trzecią liczbę: </label>
+            <input type="number" id="liczbaC" name="liczbaC">
+        </div>
+        <div>
+            <label for="liczbaD">Podaj czwartą liczbę: </label>
+            <input type="number" id="liczbaD" name="liczbaD">
+        </div>
+        <input type="submit" value="wyślij">
+    </form>
+</main>
+</body>
+</html>
