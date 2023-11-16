@@ -22,7 +22,7 @@ echo "To jest mój tekst<br/> <hr/>";
         <label for="liczba">Podaj liczby:</label>
         <input type="number" id="liczba" name="liczba">
     </div>
-
+    https://totylkokod.pl/baza-wiedzy/php-storm-skroty-ktore-warto-znac/
     <input type="submit" value="wyslij">
 </form>
 </body>
