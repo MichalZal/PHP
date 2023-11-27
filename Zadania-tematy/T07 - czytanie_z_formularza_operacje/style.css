@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #221;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: brown;
+    padding: 1rem 1rem 2rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 93%, 73% 93%, 39% 100%, 14% 95%, 0 99%);
+    margin-bottom: 2rem;
+    transition: 400ms all ease-in-out;
+}
+
+main {
+    margin: 2rem auto 10rem;
+    width: 90%;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+main input[type="text"], main input[type="number"] {
+    width: 150px;
+    height: 25px;
+    font-size: 1.2rem;
+}
+
+.dzialaj, input[type="submit"] {
+    background-color: brown;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+.dzialaj, input[type="submit"]:hover {
+    background-color: rgb(92, 22, 22);
+}
+
+.dzialaj, input[type="submit"]:active {
+    border: 2px solid rgb(203, 110, 110);
+}
+
+.inp {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

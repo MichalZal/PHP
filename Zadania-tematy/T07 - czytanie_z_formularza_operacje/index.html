@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie T07</title>
+    <meta name="author" content="Michał Zalewski">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Zadanie T07 - czytanie danych z formularza i wykonywanie operacji matematycznych</h1>
+    <h2>Autor: Michał Zalewski 4pir_2</h2>
+    <pre>Zapoznaj się z materiałem lekcji.
+        Wykonaj zadanie w którym użytkownik za pomocą formularza wprowadza następujące
+        dane:
+
+        imię (łańcuch znaków)
+        nie więcej niż cztery liczby.
+        Skrypt odczytuje te dane i w pliku wynik.php odpowiada:
+
+        "Witaj" z imieniem podanym przez użytkownika "na mojej stronie!!!".
+
+        np. Witaj Jolka na mojej stronie!!!
+
+        Pozostałe wartości zapisuje w tablicy, wyświetla tą tablicę (za pomocą var_dump).
+        Po konwersji wypisuje sumę oraz średnią podanych wartości.
+
+        Uwaga!!!
+
+        Skrypt powinien działać nawet jeśli użytkownik zamiast liczb wprowadzi
+        łańcuch znaków. Obliczając średnią sprawdźcie, ile liczb
+        znajduje się w tablicy (4 to wartość maksymalna, ale może ich być
+        mniej, bo użytkownik podał łańcuch znaków, który nie da
+        się przekonwertować na liczbę. Aby mianownik w średniej
+        był różny od 0 zakładamy, że użytkownik podał przynajmniej
+        jedną liczbę prawidłowo).</pre>
+</header>
+<main>
+    <form action="wynik.php" method="get">
+        <div class="inp">
+            <label for="imie">Podaj imię: </label>
+            <input type="text" id="imie" name="imie">
+        </div>
+        <hr>
+        <div class="inp">
+            <label for="liczba1">Podaj pierwszą liczbę: </label>
+            <input type="number" id="liczba1" name="liczba1">
+        </div>
+        <div class="inp">
+            <label for="liczba2">Podaj drugą liczbę: </label>
+            <input type="number" id="liczba2" name="liczba2">
+        </div>
+        <div class="inp">
+            <label for="liczba3">Podaj trzecią liczbę: </label>
+            <input type="number" id="liczba3" name="liczba3">
+        </div>
+        <div class="inp">
+            <label for="liczba4">Podaj czwartą liczbę: </label>
+            <input type="number" id="liczba4" name="liczba4">
+        </div>
+        <input type="submit" value="wyślij">
+    </form>
+</main>
+</body>
+</html>
