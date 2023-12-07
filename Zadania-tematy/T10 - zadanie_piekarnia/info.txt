@@ -1,0 +1,10 @@
+Rozszerzony przykład pierkani z odcinka PHP 1 Mirosława Zalenta
+
+Zrobione podpunkty:
+-a (wiek i walidacja)
+-b (Grafiki)
+-c (Co trzeci pączek darmowy)
+-d (w połowie)
+-e (Jeśli licbza pierwsza - rabat 10%)
+-f (sposób i cena dostawy)
+
