@@ -92,10 +92,18 @@
         return [$iloscDarmowychProduktow, $czegoNajwiecej];
     }
 
-    $pormocjaLosowa = promocjaLosowa($paczkow, $grzebieni, $drozdowy);
-//    echo "$pormocjaLosowa[0]<br/>";
-//    echo "$pormocjaLosowa[1]<br/>";
-// Uwzględnić jescze te liczby w promocji na największy produkt :)
+    $promocjaNaNajwiekszyELement = promocjaLosowa($paczkow, $grzebieni, $drozdowy);
+
+    $naCoDacPromocje = $promocjaNaNajwiekszyELement[1];
+    $ilePromocji = $promocjaNaNajwiekszyELement[0];
+
+    if ($naCoDacPromocje == "grz") {
+        $grzebieni = $grzebieni - $ilePromocji;
+    } elseif ($naCoDacPromocje == "droz") {
+        $drozdowy = $drozdowy - $ilePromocji;
+    } elseif ($naCoDacPromocje == "pacz") {
+        $paczkow = $paczkow - $ilePromocji;
+    }
 
 
     $obnizkaNaPaczki = obliczObnizkeNaPaczki($paczkow);
