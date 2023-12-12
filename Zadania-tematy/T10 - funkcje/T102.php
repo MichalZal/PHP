@@ -54,10 +54,9 @@
         $num = $_POST['num'];
         $potega = $_POST['num2'];
 
-        if (!$num || !$potega) {
-            echo "Nie podano którejś z liczb!";
+        if (!is_numeric($num) || !is_numeric($potega)) {
+            echo "Błąd. Proszę podać liczby!";
         } else {
-
             echo "Wartość liczby: $num<br/>";
             $numDoPotegi = potega($num, $potega);
             echo "Wartość liczby po podniesieniu do potęgi $potega: <b>$num</b>";

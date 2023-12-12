@@ -37,17 +37,15 @@
     </form>
     <hr>
     <?php
-
         function wartoscBezwzgledna($num) {
             return abs($num);
         }
 
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $num = $_POST['num'];
-            if (!$num) {
-                echo "Nie podano liczby!";
+            if (!is_numeric($num)) {
+                echo "Błąd. Nie podano liczby!";
             } else {
-
                 $abolutnyNum = wartoscBezwzgledna($num);
                 echo "Wartość bezwzględna liczby $num, wynosi <b>$abolutnyNum</b>";
             }

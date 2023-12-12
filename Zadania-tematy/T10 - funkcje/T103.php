@@ -47,7 +47,7 @@
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $num = $_POST['num'];
 
-        if (!$num || $num > 12 || $num < 1) {
+        if (!is_numeric($num) || $num > 12 || $num < 1) {
             echo "Proszę podać liczbę z zakresu <1,12>";
         } else {
             $nazwaMiesaica = sprawdzMiesiac($num);
