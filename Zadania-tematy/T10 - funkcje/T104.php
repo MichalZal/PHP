@@ -5,13 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zadania z funkcji - zad 4</title>
+    <title>Zadania z Funkcji - zad 4</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h2>Zadanie T104</h2>
-    <p>Napisz funkcję, która będzie przyjmowała dwa argumenty liczbowe i będzie wypisywała mniejszą z nich w kolorze zielonym, a większą w czerwonym. W przypadku podania liczb jednakowych obie należy wyświetlić w kolorze niebieskim.
+    <p>Napisz funkcję, która będzie przyjmowała dwa argumenty liczbowe i będzie wypisywała mniejszą z nich w kolorze
+        zielonym, a większą w czerwonym. W przypadku podania liczb jednakowych obie należy wyświetlić w kolorze
+        niebieskim.
     </p>
     <table>
         <tr>
@@ -31,7 +33,8 @@
         <div>
             <label for="num">Podaj pierwszą liczbę: </label>
             <input type="number" id="num" name="num">
-        </div>   <div>
+        </div>
+        <div>
             <label for="num2">Podaj drugą liczbę: </label>
             <input type="number" id="num2" name="num2">
         </div>

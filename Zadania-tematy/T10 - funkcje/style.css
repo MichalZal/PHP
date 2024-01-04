@@ -58,10 +58,17 @@ table {
 }
 
 table, td, th {
-    border: 1px solid white;
+    border: 2px solid white;
     border-collapse: collapse;
 }
 
 td {
     padding: 1rem;
+    transition: ease-out all .15s;
+}
+
+td:hover {
+    transform: scale(1.2);
+    backdrop-filter: blur(5px);
+    border: 5px solid white;
 }

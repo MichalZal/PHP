@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zadania z funkcji - zad 5</title>
+    <title>Zadania z Funkcji - zad 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -67,7 +67,6 @@
         } else {
             echo "Podane wartości muszą być liczbami!";
         }
-
     }
     ?>
 </main>
