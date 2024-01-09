@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: brown;
+    padding: 1rem 1rem 2rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 93%, 73% 93%, 39% 100%, 14% 95%, 0 99%);
+    margin-bottom: 2rem;
+    transition: 400ms all ease-in-out;
+}
+
+main {
+    margin: 2rem auto 10rem;
+    width: 90%;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
