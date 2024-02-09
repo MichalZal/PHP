@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie </title>
+    <title>Zadanie T12_3 - Imiona </title>
+    <meta name="author" content="Michał Zalewski">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
     <h1>Imiona z pliku imiona.txt</h1>
+    <h2>Autor: Michał Zalewski</h2>
+</header>
+<main>
     <div>
         <h2>Kolejność zapisana:</h2>
         <ul>
             <?php
-            // Otwieranie pliku do odczytu
-            $file = fopen("imiona.txt", "r");
-            
-            // Sprawdzenie, czy plik został otwarty poprawnie
-            if ($file) {
-                // Odczytanie pliku linia po linii
-                while (($line = fgets($file)) !== false) {
-                    // Wypisanie zawartości linii na stronie w postaci listy
-                    echo "<li>" . htmlspecialchars($line) . "</li>";
+            $plik = fopen("imiona.txt", "r");
+
+            if ($plik) {
+                while (($linia = fgets($plik)) !== false) {
+                    echo "<li>" . htmlspecialchars($linia) . "</li>";
                 }
-                
-                // Zamknięcie pliku
-                fclose($file);
+
+                fclose($plik);
             } else {
-                // Komunikat o błędzie, jeśli nie udało się otworzyć pliku
                 echo "Błąd podczas otwierania pliku.";
             }
             ?>
@@ -36,26 +36,20 @@
         <h2>Kolejność odwrotna:</h2>
         <ul>
             <?php
-            // Otwieranie pliku do odczytu
-            $file = fopen("imiona.txt", "r");
-            
-            // Sprawdzenie, czy plik został otwarty poprawnie
-            if ($file) {
-                // Odczytanie pliku linia po linii i zapisanie imion do tablicy
-                $imiona = [];
-                while (($line = fgets($file)) !== false) {
-                    $imiona[] = trim($line); // Usunięcie ewentualnych białych znaków na początku i końcu linii
-                }
-                
-                // Zamknięcie pliku
-                fclose($file);
+            $plik = fopen("imiona.txt", "r");
 
-                // Wyświetlenie imion w odwrotnej kolejności
+            if ($plik) {
+                $imiona = [];
+                while (($linia = fgets($plik)) !== false) {
+                    $imiona[] = trim($linia); // Usunięcie ewentualnych białych znaków na początku i końcu linii
+                }
+
+                fclose($plik);
+
                 foreach (array_reverse($imiona) as $imie) {
                     echo "<li>" . htmlspecialchars($imie) . "</li>";
                 }
             } else {
-                // Komunikat o błędzie, jeśli nie udało się otworzyć pliku
                 echo "Błąd podczas otwierania pliku.";
             }
             ?>

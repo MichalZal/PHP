@@ -7,7 +7,7 @@ FORMUŁA SPOTKANIA NIE JEST ZAMKNIĘTA – KAŻDY MOŻE PRZYŁĄCZYĆ SIĘ DO CZ
 
 // Zapisywanie tekstu do pliku
 $plik = fopen("narodoweCzytanie.txt", "w");
-fwrite($plik, $$tekstDoWpisania);
+fwrite($plik, $tekstDoWpisania);
 fclose($plik);
 
 function odczytajIWypiszTekst($nazwaPliku) {
@@ -28,4 +28,3 @@ function odczytajIWypiszTekst($nazwaPliku) {
 
 // Wywołanie funkcji do odczytu danych i wyświetlenia ich na stronie
 odczytajIWypiszTekst("narodoweCzytanie.txt");
-?>

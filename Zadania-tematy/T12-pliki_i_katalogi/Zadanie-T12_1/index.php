@@ -12,10 +12,9 @@ fclose($plik2);
 
 unlink("doSkasownia.txt");
 
-
 mkdir("Zalewski");
 
 $plik3 = fopen("Zalewski/Zalewski_i_Michal.txt", "w");
 fclose($plik3);
-?>
+
 
