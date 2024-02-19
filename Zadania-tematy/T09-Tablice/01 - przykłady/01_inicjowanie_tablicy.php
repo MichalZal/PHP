@@ -11,7 +11,6 @@ echo "<pre>";
   $pieczywo[1] = "Bułeczki";
   print_r($pieczywo);
 
-
   // inicjowanie tablicy tablicą
 
 $kopia_owocow = $owoce;

@@ -34,7 +34,7 @@
     echo "</pre>";
 
     $suma = $tab[0] + $tab[1] + $tab[2] + $tab[3];
-    $srednia = $suma/4;
+    $srednia = $suma / 4;
 
     echo "Suma liczb wynosi: <b>$suma</b> <br/>";
     echo "Średnia liczb wynosi: <b>$srednia</b>";

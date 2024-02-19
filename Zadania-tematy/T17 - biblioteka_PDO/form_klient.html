@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Rejestracja klienta</title>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        form {
+            border: 1px solid white;
+            padding: 1rem;
+        }
+
+        .wyb {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            font-size: 1.1rem;
+            margin: .2rem;
+            padding: .2rem .3rem;
+            background-color: brown;
+            border: none;
+            color: white;
+            transition: .3s all ease-in-out;
+            border-radius: 6px;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: darkred;
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>---------- Zadanie 17 ---------- </h1>
+    <h2>Autor: Michał Zalewski</h2>
+</header>
+    <div class="container">
+    <form action="dodaj_klienta.php" method="post">
+        <p class="wyb">Dodaj człowieka:</p>
+        <div>
+            <label for="imie">Podaj imię: </label>
+            <input type="text" id="imie" name="imie">
+        </div>
+        <div>
+            <label for="nazwisko">Podaj nazwisko: </label>
+            <input type="text" id="nazwisko" name="nazwisko"><br>
+        </div>
+        <div>
+            <input type="submit" value="Dodaj człowieka" name="wyslij">
+            <input type="reset" value="Wyczyść" name="zeruj">
+        </div>
+    </form>
+
+    <form action="szukaj_autora.php" method="post">
+        <p class="wyb">Znajdz człowieka:</p>
+        <div>
+            <label for="imie1">Podaj imię: </label>
+            <input type="text" id="imie1" name="imie1">
+        </div>
+        <div>
+            <label for="nazwisko1">Podaj nazwisko: </label>
+            <input type="text" id="nazwisko1" name="nazwisko1"><br>
+        </div>
+        <div>
+            <input type="submit" value="Znajdź człowieka" name="wyslij">
+            <input type="reset" value="Wyczyść" name="zeruj">
+        </div>
+    </form>
+</div>
+</body>
+</html>
