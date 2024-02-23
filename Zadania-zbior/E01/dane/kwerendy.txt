@@ -1,0 +1,12 @@
+
+---- kwerenda 1 ----
+SELECT filmy.tytul, filmy.rok, filmy.ocena FROM filmy WHERE filmy.gatunki_id=5;
+
+---- kwerenda 2 ----
+SELECT filmy.id, filmy.tytul, rezyserzy.imie, rezyserzy.nazwisko FROM filmy JOIN rezyserzy ON filmy.rezyserzy_id = rezyserzy.id;
+
+---- kwerenda 3 -----
+SELECT filmy.id, filmy.tytul from filmy WHERE filmy.rok=2017 and filmy.ocena=6;
+
+---- kwerenda 4 -----
+UPDATE rezyserzy SET imie = 'Francis Ford' WHERE id = 8;
