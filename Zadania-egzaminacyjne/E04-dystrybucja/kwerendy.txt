@@ -1,0 +1,12 @@
+----- kwerenda 1 -----
+SELECT podzespoly.nazwa, podzespoly.dostepnosc, podzespoly.cena FROM podzespoly WHERE podzespoly.producenci_id=5;
+
+----- kwerenda 2 -----
+SELECT podzespoly.id, podzespoly.opis FROM podzespoly WHERE podzespoly.dostepnosc=0 AND (podzespoly.producenci_id=1 OR podzespoly.producenci_id=2);
+
+----- kwerenda 3 -----
+SELECT po.opis, po.cena, pr.nazwa FROM podzespoly AS po INNER JOIN producenci AS pr ON po.producenci_id = pr.id;
+
+----- kwerenda 4 ------
+ALTER TABLE producenci ADD COLUMN priorytet varchar(20);
+

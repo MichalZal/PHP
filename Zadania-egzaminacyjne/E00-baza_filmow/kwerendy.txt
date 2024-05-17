@@ -1,0 +1,16 @@
+
+----- kwerenda 1 ------
+INSERT INTO filmy (filmy.tytul, filmy.rok, filmy.gatunek filmy.ocena) VALUES ('Suburbicon', 2017, 5, 5);
+
+----- kwerenda 2 ------
+SELECT filmy.tytul, gatunki.nazwa FROM filmy INNER JOIN gatunki ON gatunki.id = filmy.gatunki_id WHERE filmy.ocena=6;
+
+----- kwerenda 3 ------
+SELECT filmy.tytul, filmy.rok FROM filmy WHERE filmy.gatunki_id=3 and filmy.ocena=5;
+
+----- kwerenda 4 ------
+CREATE TABLE IF NOT EXISTS aktorzy (
+	id INT NOT NULL,
+    imie VARCHAR(200),
+    nazwisko VARCHAR(200)
+);

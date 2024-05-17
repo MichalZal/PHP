@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmy</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+<aside>
+    <h3>Dostępne gatunki filmu</h3>
+    <ol>
+        <li>Sci-Fi</li>
+        <li>animacja</li>
+        <li>dramat</li>
+        <li>horror</li>
+        <li>komedia</li>
+    </ol>
+    <p><a href="./kadr.jpg">Pobierz obraz</a></p>
+    <p>
+        <a href="repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a>
+    </p>
+</aside>
+<section class="section-1">
+    <h1>FILMOTEKA</h1>
+</section>
+<section class="section-2">
+    <form action="dodaj.php" method="POST">
+        <label for="tytul">Tytuł: </label><input id="tytul" type="text" name="tytul"><br/><br/>
+        <label for="gatunek">Gatunek filmu: </label><input id="gatunek" type="number" min="1" max="5" name="gatunek"><br/><br/>
+        <label for="rok">Rok produkcji: </label><input type="number" id="rok" name="rok"><br/><br/>
+        <label for="ocena">Ocena: </label><input type="number" id="ocena" name="ocena"><br/>
+
+        <input type="reset" value="CZYŚĆ"/><br/>
+        <input type="submit" value="DODAJ"/><br/>
+
+    </form>
+</section>
+<section class="section-3">
+    <img src="./kadr.jpg" alt="zdjęcia filmowe">
+</section>
+<footer>
+    <p>Autor strony: Michał Zalewski 4IP_1</p>
+</footer>
+</body>
+</html>

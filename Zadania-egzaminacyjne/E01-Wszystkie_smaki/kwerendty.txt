@@ -1,0 +1,11 @@
+----- Kwerenda 1 -----
+INSERT INTO rezerwacje (rezerwacje.nr_stolika, rezerwacje.data_rez, rezerwacje.liczba_osob, rezerwacje.telefon) VALUES (1, '2017-07-04', 4, '111222333');
+
+----- Kwerenda 2 -----
+SELECT dania.nazwa, dania.cena FROM dania WHERE dania.typ = 2;
+
+----- Kwerenda 3 -----
+SELECT dania.nazwa FROM dania WHERE dania.typ = 3 and dania.cena < 15;
+
+----- Kwerenda 4 -----
+UPDATE pracownicy SET pracownicy.stanowisko = 'barman' WHERE pracownicy.stanowisko = 'kelner';

@@ -1,0 +1,44 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.blok-listy, .blok-logo {
+    background-color: #6FACE3;
+    color: #0000FF;
+    height: 300px;
+    width: 30%;
+    float: left;
+}
+
+.blok-formularza {
+    background-color: #6FACE3;
+    color: #0000FF;
+    height: 300px;
+    width: 40%;
+    float: left;
+}
+
+.blok-glowny {
+    background-color: #4C93D2;
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+footer {
+    background-color: #2d77ba;
+    color: white;
+    height: 170px;
+    padding: 15px;
+}
+
+a {
+    background-color: LightSkyBlue;
+    margin: 5px;
+    padding: 10px;
+}
+
+a:visited {
+    background-color: LightSteelBlue;
+}

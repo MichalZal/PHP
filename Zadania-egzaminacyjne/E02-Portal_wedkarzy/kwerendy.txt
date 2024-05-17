@@ -1,0 +1,13 @@
+----- kwerenda 1 -----
+SELECT ryby.id, ryby.nazwa, ryby.wystepowanie FROM ryby WHERE ryby.styl_zycia=1;
+
+----- kwerenda 2 -----
+SELECT okres_ochronny.Ryby_id, okres_ochronny.wymiar_ochronny FROM okres_ochronny WHERE okres_ochronny.wymiar_ochronny<30;
+
+----- kwerenda 3 ------
+SELECT r.nazwa, l.akwen, l.wojewodztwo FROM ryby as r INNER JOIN lowisko AS l ON r.id = l.Ryby_id WHERE l.rodzaj=3;
+
+----- kwerenda 4 ------
+ALTER TABLE Ryby ADD COLUMN dobowy_limit TINYINT UNSIGNED NOT NULL, ADD CHECK (dobowy_limit >= 0 AND dobowy_limit <= 255);
+
+
